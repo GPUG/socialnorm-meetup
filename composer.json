@@ -1,0 +1,36 @@
+{
+    "name": "socialnorm/meetup",
+    "description": "Meetup provider for SocialNorm",
+    "authors": [
+    {
+        "name": "Colin DeCarlo",
+        "email": "colin@thedecarlos.ca"
+    }
+    ],
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/adamwathan/socialnorm"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "guzzlehttp/guzzle": "^5.0",
+        "socialnorm/socialnorm": "0.1.*"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.8",
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "SocialNorm\\Meetup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "tests/TestCase.php"
+        ]
+    }
+}
